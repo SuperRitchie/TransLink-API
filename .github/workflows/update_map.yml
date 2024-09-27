@@ -31,8 +31,12 @@ jobs:
         TRANSLINK_API: ${{ secrets.TRANSLINK_API }}
       run: python translink.py
 
+    - name: List files to check for index.html
+      run: ls -al
+
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: .
         publish_branch: gh-pages
