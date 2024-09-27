@@ -31,9 +31,6 @@ jobs:
         TRANSLINK_API: ${{ secrets.TRANSLINK_API }}
       run: python translink.py
 
-    - name: Move generated map to root
-      run: mv map.html .
-
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
