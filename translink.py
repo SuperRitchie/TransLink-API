@@ -65,4 +65,4 @@ for lat, lon, color, info in zip(lats, lons, colors, infos):
     gmap.marker(lat, lon, title=info, color=color)
 
 # Save the map to an HTML file
-gmap.draw('map.html')
+gmap.draw('index.html')
