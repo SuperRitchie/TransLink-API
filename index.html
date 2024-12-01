@@ -8,7 +8,7 @@
     function initialize() {
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
             zoom: 12,
-            center: new google.maps.LatLng(49.280287, -123.018249)
+            center: new google.maps.LatLng(49.279298, -123.022418)
         });
 
         var marker_icon_008000 = {
@@ -17,22 +17,29 @@
         };
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.281300, -123.071465),
+            position: new google.maps.LatLng(49.281334, -123.098686),
             title: "Vehicle: 23001, Route: 37807, Direction: Inbound",
             icon: marker_icon_008000,
             map: map
         });
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.281082, -123.044884),
+            position: new google.maps.LatLng(49.281116, -123.047585),
+            title: "Vehicle: 22006, Route: 37807, Direction: Outbound",
+            icon: marker_icon_008000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(49.281052, -123.025002),
             title: "Vehicle: 23011, Route: 37807, Direction: Outbound",
             icon: marker_icon_008000,
             map: map
         });
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.281181, -123.024368),
-            title: "Vehicle: 24016, Route: 37807, Direction: Inbound",
+            position: new google.maps.LatLng(49.281116, -123.020386),
+            title: "Vehicle: 19044, Route: 37807, Direction: Inbound",
             icon: marker_icon_008000,
             map: map
         });
@@ -45,29 +52,22 @@
         });
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.280201, -122.991470),
-            title: "Vehicle: 19044, Route: 37807, Direction: Inbound",
-            icon: marker_icon_008000,
-            map: map
-        });
-
-        new google.maps.Marker({
-            position: new google.maps.LatLng(49.281151, -123.060997),
-            title: "Vehicle: 22006, Route: 37807, Direction: Outbound",
-            icon: marker_icon_008000,
-            map: map
-        });
-
-        new google.maps.Marker({
-            position: new google.maps.LatLng(49.278332, -122.912483),
+            position: new google.maps.LatLng(49.273834, -122.931450),
             title: "Vehicle: 19034, Route: 37807, Direction: Inbound",
             icon: marker_icon_008000,
             map: map
         });
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.285534, -123.113953),
+            position: new google.maps.LatLng(49.281200, -123.091286),
             title: "Vehicle: 23007, Route: 37807, Direction: Outbound",
+            icon: marker_icon_008000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(49.281216, -123.038582),
+            title: "Vehicle: 24016, Route: 37807, Direction: Inbound",
             icon: marker_icon_008000,
             map: map
         });
