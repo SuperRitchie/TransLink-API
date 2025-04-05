@@ -8,7 +8,7 @@
     function initialize() {
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
             zoom: 12,
-            center: new google.maps.LatLng(49.281450, -123.026449)
+            center: new google.maps.LatLng(49.280183, -123.024599)
         });
 
         var marker_icon_FF0000 = {
@@ -17,7 +17,7 @@
         };
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.281250, -123.065987),
+            position: new google.maps.LatLng(49.281502, -123.104164),
             title: "Vehicle: 16202, Route: 37807, Direction: Inbound",
             icon: marker_icon_FF0000,
             map: map
@@ -29,22 +29,29 @@
         };
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.280968, -123.004120),
+            position: new google.maps.LatLng(49.276852, -122.945030),
             title: "Vehicle: 22013, Route: 37807, Direction: Outbound",
             icon: marker_icon_008000,
             map: map
         });
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.281349, -122.927254),
-            title: "Vehicle: 22011, Route: 37807, Direction: Inbound",
+            position: new google.maps.LatLng(49.281166, -123.070465),
+            title: "Vehicle: 19036, Route: 37807, Direction: Outbound",
             icon: marker_icon_008000,
             map: map
         });
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.282234, -123.108437),
-            title: "Vehicle: 19036, Route: 37807, Direction: Outbound",
+            position: new google.maps.LatLng(49.281181, -123.042549),
+            title: "Vehicle: 19042, Route: 37807, Direction: Inbound",
+            icon: marker_icon_008000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(49.280216, -122.960785),
+            title: "Vehicle: 22011, Route: 37807, Direction: Inbound",
             icon: marker_icon_008000,
             map: map
         });
