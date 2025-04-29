@@ -8,7 +8,7 @@
     function initialize() {
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
             zoom: 12,
-            center: new google.maps.LatLng(49.281946, -123.032972)
+            center: new google.maps.LatLng(49.281711, -123.031007)
         });
 
         var marker_icon_008000 = {
@@ -17,14 +17,14 @@
         };
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.281250, -123.066933),
+            position: new google.maps.LatLng(49.281384, -123.099297),
             title: "Vehicle: 19034, Route: 37807, Direction: Inbound",
             icon: marker_icon_008000,
             map: map
         });
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.281052, -123.025131),
+            position: new google.maps.LatLng(49.280998, -123.013580),
             title: "Vehicle: 23015, Route: 37807, Direction: Outbound",
             icon: marker_icon_008000,
             map: map
@@ -36,49 +36,56 @@
         };
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.280968, -122.994614),
+            position: new google.maps.LatLng(49.281033, -123.013229),
+            title: "Vehicle: 16218, Route: 37807, Direction: Outbound",
+            icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(49.280300, -122.968964),
             title: "Vehicle: 16222, Route: 37807, Direction: Outbound",
             icon: marker_icon_FF0000,
             map: map
         });
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.281181, -123.022881),
-            title: "Vehicle: 22011, Route: 37807, Direction: Inbound",
-            icon: marker_icon_008000,
-            map: map
-        });
-
-        new google.maps.Marker({
-            position: new google.maps.LatLng(49.278751, -122.920502),
-            title: "Vehicle: 19042, Route: 37807, Direction: Outbound",
-            icon: marker_icon_008000,
-            map: map
-        });
-
-        new google.maps.Marker({
-            position: new google.maps.LatLng(49.281334, -122.927116),
-            title: "Vehicle: 24005, Route: 37807, Direction: Inbound",
-            icon: marker_icon_008000,
-            map: map
-        });
-
-        new google.maps.Marker({
-            position: new google.maps.LatLng(49.281517, -123.102921),
+            position: new google.maps.LatLng(49.281265, -123.077530),
             title: "Vehicle: 23011, Route: 37807, Direction: Outbound",
             icon: marker_icon_008000,
             map: map
         });
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.285015, -123.118118),
-            title: "Vehicle: 19025, Route: 37807, Direction: Inbound",
+            position: new google.maps.LatLng(49.281181, -123.025536),
+            title: "Vehicle: 22011, Route: 37807, Direction: Inbound",
             icon: marker_icon_008000,
             map: map
         });
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.286449, -123.118530),
+            position: new google.maps.LatLng(49.278534, -122.912735),
+            title: "Vehicle: 19042, Route: 37807, Direction: Inbound",
+            icon: marker_icon_008000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(49.280266, -122.961716),
+            title: "Vehicle: 24005, Route: 37807, Direction: Inbound",
+            icon: marker_icon_008000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(49.285969, -123.118866),
+            title: "Vehicle: 19025, Route: 37807, Direction: Outbound",
+            icon: marker_icon_008000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(49.286182, -123.118614),
             title: "Vehicle: 24015, Route: 37807, Direction: Outbound",
             icon: marker_icon_008000,
             map: map
