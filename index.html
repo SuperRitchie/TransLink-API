@@ -8,7 +8,7 @@
     function initialize() {
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
             zoom: 12,
-            center: new google.maps.LatLng(49.281370, -123.019901)
+            center: new google.maps.LatLng(49.280063, -123.015761)
         });
 
         var marker_icon_008000 = {
@@ -17,14 +17,21 @@
         };
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.280285, -122.968849),
+            position: new google.maps.LatLng(49.281181, -123.055931),
+            title: "Vehicle: 19025, Route: 37807, Direction: Inbound",
+            icon: marker_icon_008000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(49.273918, -122.926086),
             title: "Vehicle: 19038, Route: 37807, Direction: Outbound",
             icon: marker_icon_008000,
             map: map
         });
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.281181, -123.095100),
+            position: new google.maps.LatLng(49.281116, -123.065552),
             title: "Vehicle: 23008, Route: 37807, Direction: Outbound",
             icon: marker_icon_008000,
             map: map
@@ -36,7 +43,7 @@
         };
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.278519, -122.912735),
+            position: new google.maps.LatLng(49.278316, -122.912483),
             title: "Vehicle: 16203, Route: 37807, Direction: Inbound",
             icon: marker_icon_FF0000,
             map: map
@@ -46,13 +53,6 @@
             position: new google.maps.LatLng(49.285782, -123.118752),
             title: "Vehicle: 15019, Route: 37807, Direction: Outbound",
             icon: marker_icon_FF0000,
-            map: map
-        });
-
-        new google.maps.Marker({
-            position: new google.maps.LatLng(49.281082, -123.004066),
-            title: "Vehicle: 19025, Route: 37807, Direction: Inbound",
-            icon: marker_icon_008000,
             map: map
         });
 
