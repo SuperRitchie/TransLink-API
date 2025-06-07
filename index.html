@@ -8,7 +8,7 @@
     function initialize() {
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
             zoom: 12,
-            center: new google.maps.LatLng(49.279781, -123.019151)
+            center: new google.maps.LatLng(49.280486, -123.019025)
         });
 
         var marker_icon_008000 = {
@@ -17,14 +17,21 @@
         };
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.281368, -123.076653),
+            position: new google.maps.LatLng(49.281898, -123.106819),
             title: "Vehicle: 22013, Route: 37807, Direction: Inbound",
             icon: marker_icon_008000,
             map: map
         });
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.280033, -122.991669),
+            position: new google.maps.LatLng(49.281067, -123.043350),
+            title: "Vehicle: 19047, Route: 37807, Direction: Outbound",
+            icon: marker_icon_008000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(49.280334, -122.952217),
             title: "Vehicle: 19013, Route: 37807, Direction: Outbound",
             icon: marker_icon_008000,
             map: map
@@ -38,21 +45,14 @@
         });
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.275982, -122.930283),
+            position: new google.maps.LatLng(49.280418, -122.971016),
             title: "Vehicle: 19041, Route: 37807, Direction: Inbound",
             icon: marker_icon_008000,
             map: map
         });
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.281166, -123.071335),
-            title: "Vehicle: 19047, Route: 37807, Direction: Outbound",
-            icon: marker_icon_008000,
-            map: map
-        });
-
-        new google.maps.Marker({
-            position: new google.maps.LatLng(49.286617, -123.118767),
+            position: new google.maps.LatLng(49.285683, -123.114548),
             title: "Vehicle: 22007, Route: 37807, Direction: Outbound",
             icon: marker_icon_008000,
             map: map
