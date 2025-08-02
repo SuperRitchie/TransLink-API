@@ -8,7 +8,7 @@
     function initialize() {
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
             zoom: 12,
-            center: new google.maps.LatLng(49.281544, -123.041588)
+            center: new google.maps.LatLng(49.281211, -123.036475)
         });
 
         var marker_icon_008000 = {
@@ -17,22 +17,36 @@
         };
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.281216, -123.090248),
-            title: "Vehicle: 22010, Route: 37807, Direction: Inbound",
+            position: new google.maps.LatLng(49.281319, -123.071671),
+            title: "Vehicle: 19029, Route: 37807, Direction: Inbound",
             icon: marker_icon_008000,
             map: map
         });
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.277367, -122.919601),
-            title: "Vehicle: 23014, Route: 37807, Direction: Inbound",
-            icon: marker_icon_008000,
-            map: map
-        });
-
-        new google.maps.Marker({
-            position: new google.maps.LatLng(49.286049, -123.114914),
+            position: new google.maps.LatLng(49.281052, -123.044403),
             title: "Vehicle: 22011, Route: 37807, Direction: Outbound",
+            icon: marker_icon_008000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(49.276016, -122.943604),
+            title: "Vehicle: 19030, Route: 37807, Direction: Outbound",
+            icon: marker_icon_008000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(49.286568, -123.118629),
+            title: "Vehicle: 22010, Route: 37807, Direction: Outbound",
+            icon: marker_icon_008000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(49.281101, -123.004066),
+            title: "Vehicle: 23014, Route: 37807, Direction: Inbound",
             icon: marker_icon_008000,
             map: map
         });
