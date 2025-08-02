@@ -8,7 +8,7 @@
     function initialize() {
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
             zoom: 12,
-            center: new google.maps.LatLng(49.281188, -123.048502)
+            center: new google.maps.LatLng(49.282249, -123.057104)
         });
 
         var marker_icon_008000 = {
@@ -17,22 +17,15 @@
         };
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.281067, -123.082947),
-            title: "Vehicle: 19025, Route: 37807, Direction: Inbound",
-            icon: marker_icon_008000,
-            map: map
-        });
-
-        new google.maps.Marker({
-            position: new google.maps.LatLng(49.276283, -122.931000),
-            title: "Vehicle: 22012, Route: 37807, Direction: Inbound",
-            icon: marker_icon_008000,
-            map: map
-        });
-
-        new google.maps.Marker({
-            position: new google.maps.LatLng(49.281151, -123.061813),
+            position: new google.maps.LatLng(49.281082, -123.025032),
             title: "Vehicle: 19016, Route: 37807, Direction: Outbound",
+            icon: marker_icon_008000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(49.280434, -122.981369),
+            title: "Vehicle: 22012, Route: 37807, Direction: Inbound",
             icon: marker_icon_008000,
             map: map
         });
@@ -43,9 +36,16 @@
         };
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.286251, -123.118248),
+            position: new google.maps.LatLng(49.282249, -123.108536),
             title: "Vehicle: 16219, Route: 37807, Direction: Outbound",
             icon: marker_icon_FF0000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(49.285233, -123.113480),
+            title: "Vehicle: 19025, Route: 37807, Direction: Inbound",
+            icon: marker_icon_008000,
             map: map
         });
 
