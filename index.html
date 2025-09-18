@@ -8,7 +8,7 @@
     function initialize() {
         var map = new google.maps.Map(document.getElementById("map_canvas"), {
             zoom: 12,
-            center: new google.maps.LatLng(49.281384, -123.014952)
+            center: new google.maps.LatLng(49.279617, -123.009360)
         });
 
         var marker_icon_008000 = {
@@ -17,15 +17,22 @@
         };
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.281467, -123.104103),
-            title: "Vehicle: 22012, Route: 37807, Direction: Inbound",
+            position: new google.maps.LatLng(49.273869, -122.933548),
+            title: "Vehicle: 19031, Route: 37807, Direction: Outbound",
             icon: marker_icon_008000,
             map: map
         });
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.280300, -122.988983),
-            title: "Vehicle: 19031, Route: 37807, Direction: Outbound",
+            position: new google.maps.LatLng(49.280182, -122.991364),
+            title: "Vehicle: 22008, Route: 37807, Direction: Inbound",
+            icon: marker_icon_008000,
+            map: map
+        });
+
+        new google.maps.Marker({
+            position: new google.maps.LatLng(49.281200, -123.091736),
+            title: "Vehicle: 23005, Route: 37807, Direction: Outbound",
             icon: marker_icon_008000,
             map: map
         });
@@ -38,15 +45,8 @@
         });
 
         new google.maps.Marker({
-            position: new google.maps.LatLng(49.280418, -122.954353),
-            title: "Vehicle: 22008, Route: 37807, Direction: Inbound",
-            icon: marker_icon_008000,
-            map: map
-        });
-
-        new google.maps.Marker({
-            position: new google.maps.LatLng(49.286217, -123.114571),
-            title: "Vehicle: 23005, Route: 37807, Direction: Outbound",
+            position: new google.maps.LatLng(49.284317, -123.117401),
+            title: "Vehicle: 22012, Route: 37807, Direction: Inbound",
             icon: marker_icon_008000,
             map: map
         });
