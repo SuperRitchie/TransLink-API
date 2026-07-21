@@ -66,13 +66,13 @@
   <div id="map"></div>
 
   <script>
-    const buses = [];
+    const buses = [{"lat": 49.28118133544922, "lng": -123.08841705322266, "route": "37807", "vehicle": 22012, "direction": "Inbound", "color": "green", "info": "Vehicle: 22012, Route: 37807, Direction: Inbound"}, {"lat": 49.28110122680664, "lng": -123.04278564453125, "route": "37807", "vehicle": 19021, "direction": "Outbound", "color": "green", "info": "Vehicle: 19021, Route: 37807, Direction: Outbound"}, {"lat": 49.28031539916992, "lng": -122.96880340576172, "route": "37807", "vehicle": 19024, "direction": "Outbound", "color": "green", "info": "Vehicle: 19024, Route: 37807, Direction: Outbound"}, {"lat": 49.27595138549805, "lng": -122.94328308105469, "route": "37807", "vehicle": 24003, "direction": "Inbound", "color": "green", "info": "Vehicle: 24003, Route: 37807, Direction: Inbound"}, {"lat": 49.28229904174805, "lng": -123.10897064208984, "route": "37807", "vehicle": 19041, "direction": "Outbound", "color": "green", "info": "Vehicle: 19041, Route: 37807, Direction: Outbound"}, {"lat": 49.28118133544922, "lng": -123.02539825439453, "route": "37807", "vehicle": 24004, "direction": "Inbound", "color": "green", "info": "Vehicle: 24004, Route: 37807, Direction: Inbound"}, {"lat": 49.27851867675781, "lng": -122.91275024414062, "route": "37807", "vehicle": 22008, "direction": "Inbound", "color": "green", "info": "Vehicle: 22008, Route: 37807, Direction: Inbound"}, {"lat": 49.284568786621094, "lng": -123.112548828125, "route": "37807", "vehicle": 19043, "direction": "Inbound", "color": "green", "info": "Vehicle: 19043, Route: 37807, Direction: Inbound"}, {"lat": 49.28611755371094, "lng": -123.1185531616211, "route": "37807", "vehicle": 22010, "direction": "Outbound", "color": "green", "info": "Vehicle: 22010, Route: 37807, Direction: Outbound"}];
 
     async function initMap() {
       const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
       const map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 49.2827, lng: -123.1207 },
+        center: { lat: 49.281248304578995, lng: -123.03572336832683 },
         zoom: 12,
         mapId: "DEMO_MAP_ID",
         gestureHandling: "cooperative",
