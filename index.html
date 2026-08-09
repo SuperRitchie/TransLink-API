@@ -66,13 +66,13 @@
   <div id="map"></div>
 
   <script>
-    const buses = [{"lat": 49.28030014038086, "lng": -122.96786499023438, "route": "37807", "vehicle": 22009, "direction": "Outbound", "color": "green", "info": "Vehicle: 22009, Route: 37807, Direction: Outbound"}, {"lat": 49.281150817871094, "lng": -123.06266784667969, "route": "37807", "vehicle": 23005, "direction": "Outbound", "color": "green", "info": "Vehicle: 23005, Route: 37807, Direction: Outbound"}];
+    const buses = [];
 
     async function initMap() {
       const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
       const map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 49.28072547912598, lng: -123.01526641845703 },
+        center: { lat: 49.2827, lng: -123.1207 },
         zoom: 12,
         mapId: "DEMO_MAP_ID",
         gestureHandling: "cooperative",
