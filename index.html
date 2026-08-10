@@ -66,13 +66,13 @@
   <div id="map"></div>
 
   <script>
-    const buses = [];
+    const buses = [{"lat": 49.27273178100586, "lng": -123.02339935302734, "route": "37807", "vehicle": 24004, "direction": "Outbound", "color": "green", "info": "Vehicle: 24004, Route: 37807, Direction: Outbound"}, {"lat": 49.28129959106445, "lng": -122.92704772949219, "route": "37807", "vehicle": 24009, "direction": "Outbound", "color": "green", "info": "Vehicle: 24009, Route: 37807, Direction: Outbound"}, {"lat": 49.273834228515625, "lng": -122.9314193725586, "route": "37807", "vehicle": 19013, "direction": "Inbound", "color": "green", "info": "Vehicle: 19013, Route: 37807, Direction: Inbound"}, {"lat": 49.28288269042969, "lng": -123.11006927490234, "route": "37807", "vehicle": 22013, "direction": "Inbound", "color": "green", "info": "Vehicle: 22013, Route: 37807, Direction: Inbound"}];
 
     async function initMap() {
       const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
       const map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 49.2827, lng: -123.1207 },
+        center: { lat: 49.277687072753906, lng: -122.99798393249512 },
         zoom: 12,
         mapId: "DEMO_MAP_ID",
         gestureHandling: "cooperative",
