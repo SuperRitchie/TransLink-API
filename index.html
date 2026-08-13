@@ -66,13 +66,13 @@
   <div id="map"></div>
 
   <script>
-    const buses = [{"lat": 49.281150817871094, "lng": -123.086669921875, "route": "37807", "vehicle": 19029, "direction": "Inbound", "color": "green", "info": "Vehicle: 19029, Route: 37807, Direction: Inbound"}, {"lat": 49.28036880493164, "lng": -122.95548248291016, "route": "37807", "vehicle": 23008, "direction": "Outbound", "color": "green", "info": "Vehicle: 23008, Route: 37807, Direction: Outbound"}, {"lat": 49.280418395996094, "lng": -122.95426940917969, "route": "37807", "vehicle": 19041, "direction": "Inbound", "color": "green", "info": "Vehicle: 19041, Route: 37807, Direction: Inbound"}, {"lat": 49.28684997558594, "lng": -123.11720275878906, "route": "37807", "vehicle": 19031, "direction": "Outbound", "color": "green", "info": "Vehicle: 19031, Route: 37807, Direction: Outbound"}];
+    const buses = [{"lat": 49.27468490600586, "lng": -122.93866729736328, "route": "37807", "vehicle": 19041, "direction": "Outbound", "color": "green", "info": "Vehicle: 19041, Route: 37807, Direction: Outbound"}];
 
     async function initMap() {
       const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
       const map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 49.28219699859619, lng: -123.02840614318848 },
+        center: { lat: 49.27468490600586, lng: -122.93866729736328 },
         zoom: 12,
         mapId: "DEMO_MAP_ID",
         gestureHandling: "cooperative",
