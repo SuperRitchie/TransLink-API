@@ -66,13 +66,13 @@
   <div id="map"></div>
 
   <script>
-    const buses = [{"lat": 49.28034973144531, "lng": -122.92166900634766, "route": "37807", "vehicle": 19022, "direction": "Outbound", "color": "green", "info": "Vehicle: 19022, Route: 37807, Direction: Outbound"}, {"lat": 49.273799896240234, "lng": -122.92829895019531, "route": "37807", "vehicle": 23006, "direction": "Inbound", "color": "green", "info": "Vehicle: 23006, Route: 37807, Direction: Inbound"}, {"lat": 49.28118133544922, "lng": -123.02538299560547, "route": "37807", "vehicle": 19023, "direction": "Inbound", "color": "green", "info": "Vehicle: 19023, Route: 37807, Direction: Inbound"}, {"lat": 49.28390121459961, "lng": -123.11132049560547, "route": "37807", "vehicle": 19043, "direction": "Outbound", "color": "green", "info": "Vehicle: 19043, Route: 37807, Direction: Outbound"}];
+    const buses = [{"lat": 49.28200149536133, "lng": -123.10697937011719, "route": "37807", "vehicle": 19022, "direction": "Inbound", "color": "green", "info": "Vehicle: 19022, Route: 37807, Direction: Inbound"}, {"lat": 49.28110122680664, "lng": -123.0250015258789, "route": "37807", "vehicle": 19023, "direction": "Outbound", "color": "green", "info": "Vehicle: 19023, Route: 37807, Direction: Outbound"}, {"lat": 49.27946853637695, "lng": -123.02339935302734, "route": "37807", "vehicle": 24009, "direction": "Inbound", "color": "green", "info": "Vehicle: 24009, Route: 37807, Direction: Inbound"}, {"lat": 49.277748107910156, "lng": -122.93346405029297, "route": "37807", "vehicle": 22002, "direction": "Outbound", "color": "green", "info": "Vehicle: 22002, Route: 37807, Direction: Outbound"}, {"lat": 49.280433654785156, "lng": -122.98136901855469, "route": "37807", "vehicle": 19041, "direction": "Inbound", "color": "green", "info": "Vehicle: 19041, Route: 37807, Direction: Inbound"}, {"lat": 49.276668548583984, "lng": -122.91698455810547, "route": "37807", "vehicle": 19043, "direction": "Inbound", "color": "green", "info": "Vehicle: 19043, Route: 37807, Direction: Inbound"}, {"lat": 49.282466888427734, "lng": -123.10936737060547, "route": "37807", "vehicle": 23006, "direction": "Outbound", "color": "green", "info": "Vehicle: 23006, Route: 37807, Direction: Outbound"}, {"lat": 49.284400939941406, "lng": -123.11253356933594, "route": "37807", "vehicle": 16218, "direction": "Inbound", "color": "red", "info": "Vehicle: 16218, Route: 37807, Direction: Inbound"}];
 
     async function initMap() {
       const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
       const map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 49.279808044433594, lng: -122.99666786193848 },
+        center: { lat: 49.28053617477417, lng: -123.02613735198975 },
         zoom: 12,
         mapId: "DEMO_MAP_ID",
         gestureHandling: "cooperative",
