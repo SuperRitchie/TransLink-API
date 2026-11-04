@@ -1,10 +1,12 @@
 import os
 import json
+from urllib.parse import quote, quote_plus
+
 import requests
 from google.transit import gtfs_realtime_pb2
 
-API_KEY = os.getenv("TRANSLINK_API")
-GMAP_API_KEY = os.getenv("GMAP_API")
+API_KEY = (os.getenv("TRANSLINK_API") or "").strip()
+GMAP_API_KEY = (os.getenv("GMAP_API") or "").strip()
 
 if not API_KEY:
     raise ValueError("missing TRANSLINK_API")
@@ -12,13 +14,40 @@ if not API_KEY:
 if not GMAP_API_KEY:
     raise ValueError("missing GMAP_API")
 
-url = f"https://gtfsapi.translink.ca/v3/gtfsposition?apikey={API_KEY}"
+try:
+    response = requests.get(
+        "https://gtfsapi.translink.ca/v3/gtfsposition",
+        params={"apikey": API_KEY},
+        headers={"User-Agent": "TransLink-API/1.0"},
+        timeout=15,
+    )
+except requests.RequestException as error:
+    raise SystemExit(
+        f"TransLink request failed: {type(error).__name__}"
+    ) from None
 
-response = requests.get(url, timeout=15)
-response.raise_for_status()
+print("HTTP status:", response.status_code)
+print("Server:", response.headers.get("Server"))
+print("Content type:", response.headers.get("Content-Type"))
+
+if response.status_code != 200:
+    details = response.text
+    secrets = {
+        API_KEY,
+        quote(API_KEY, safe=""),
+        quote_plus(API_KEY),
+    }
+
+    for secret in sorted(secrets, key=len, reverse=True):
+        details = details.replace(secret, "[redacted]")
+
+    print("Response:", details[:1000])
+    raise SystemExit("TransLink feed request failed")
 
 feed = gtfs_realtime_pb2.FeedMessage()
 feed.ParseFromString(response.content)
+
+print(f"Feed received: {len(feed.entity)} entities")
 
 buses = []
 
@@ -206,3 +235,4 @@ html = f"""
 
 with open("index.html", "w", encoding="utf-8") as file:
     file.write(html)
+
